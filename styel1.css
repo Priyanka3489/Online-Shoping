@@ -1,0 +1,46 @@
+
+img{
+	Height:279px;
+	width: 200px;
+	border-style:solid;
+	border-color: rgb(84, 237, 237);
+	padding-top:25px ;
+	padding-bottom:30px ;
+	padding-left:20px;
+	padding-right:20px ;
+    Margin:50px;
+	
+	border-radius: 110px;
+	 
+}
+h4{
+	color: rgba(36, 65, 14, 0.936);
+}
+h5{
+	color: rgb(153, 134, 39);
+}
+select{
+	padding-bottom:5px ;
+	padding-right:10px ;
+
+}
+b{
+	color: rgb(0, 242, 255);
+	content: '';
+	width: 100px;
+	height: 3px;
+	background-color: rgb(130, 165, 42);
+	bottom: -10px;
+	left: 50px;
+	transform: translate(-50%);
+}
+a{
+	color: rgb(255, 248, 34);
+}
+
+img:hover{
+	transform: scale(0.8)rotate(-15deg);
+	border-radius: 20px;
+	box-shadow:0 32px 75px rgba(68,77,136,0.2);
+}
+
