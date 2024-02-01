@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+
+	<link rel="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: "Poppins", sans-serif;
+		}
+
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			background: #141313;
+		}
+
+		ul {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			gap: 70px;
+		}
+
+		ul li {
+			list-style: none;
+			position: relative;
+		}
+
+		ul li a {
+			position: relative;
+			text-decoration: none;
+			font-size: 3em;
+			line-height: 2em;
+			letter-spacing: 2px;
+			color: transparent;
+			-webkit-text-stroke: 1px var(--clr);
+		}
+
+		ul li a::before {
+			content: attr(data-text);
+			position: absolute;
+			color: var(--clr);
+			width: 0px;
+			overflow: hidden;
+			transition: 1s;
+
+			border-right: 8px solid var(--clr);
+		}
+
+		ul li a:hover::before {
+			width: 100%;
+			filter: drop-shadow(7px -12px 50px var(--clr));
+		}
+	</style>
+</head>
+<!--Css code from Text Effects -->
+
+
+
+<body>
+
+	<ul>
+		<!-- Css color Effects -->
+		<li style="--clr:#eea7a7;">
+			<h3><a href="#" data-text="&nbsp;Welcome to my web side Visit.">&nbsp;Welcome to my web side Visit.
+					&nbsp;</a></h3>
+	</ul>
+
+	<!-- JavaScript validateform Code-->
+	<script>
+		function validateform() {
+			var Username = document.myform.name.value;
+			var Mobile_number = document.myform.Mobile_number.value;
+			var password = document.myform.password.value;
+
+			if (name == null || name == "") {
+				alert("Name can't be blank");
+				return false;
+			} else if (password.length < 6) {
+				lert("Password must be at least 6 characters long.");
+				return false;
+			}
+		} 
+	</script>
+	<form name="myform" method="post" action="main.html"
+		onsubmit="return validateform()">
+		<html>
+
+		<!-- Css style code from Page login-->
+
+		<head>
+			<link rel="stylesheet" href="style.css">
+			<title> CSS Login </title>
+
+			<link rel="stylesheet"
+				href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap">
+			<style>
+				* header .header {
+					background-color: yellow;
+					height: 45px;
+				}
+
+				header a img {
+					width: 134px;
+					margin-top: 4px;
+				}
+
+				.login-page {
+					width: 360px;
+					padding: 8% 0 0;
+					margin: auto;
+				}
+
+				.login-page .form .login {
+					margin-top: -31px;
+					margin-bottom: 26px;
+				}
+
+				.form {
+					position: relative;
+					z-index: 1;
+					background: #ecefb5;
+					max-width: 360px;
+					margin: 0 auto 100px;
+					padding: 45px;
+					text-align: center;
+					box-shadow: 0 0 20px 0 rgba(62, 59, 255, 0.2) 0 5px 5px 0 rgba(255, 223, 39, 0.233)
+				}
+
+				.form input {
+					font-family: "Roboto", sans-serif;
+					outline: 0;
+					background: hwb(132 18% 7% / 0.984);
+					width: 100%;
+					border: 0;
+					margin: 0 0 15px;
+					padding: 15px;
+					box-sizing: border-box;
+					font-size: 14px;
+				}
+
+				.form button {
+					font-family: "Roboto", sans-serif;
+					text-transform: uppercase;
+					outline: 0;
+					background-color: #3bd333;
+					background-image: linear-gradient(45deg, rgb(225, 213, 101), rgb(22, 172, 8));
+					width: 100%;
+					border: 0;
+					padding: 15px;
+					color: rgb(34, 88, 206);
+					font-size: 14px;
+					-webkit-transition: all 0.3 ease;
+					transition: all 0.3 ease;
+					cursor: pointer;
+				}
+
+				.form .message {
+					margin: 15px 0 0;
+					color: #cc2c2c;
+					font-size: 12px;
+				}
+
+				.form .message a {
+					color: rgba(186, 27, 183, 0.733);
+					text-decoration: none;
+				}
+
+				.container {
+					position: relative;
+					z-index: 1;
+					max-width: 300px;
+					margin: 0 auto;
+				}
+
+				body {
+					background-color: #0c3d5d;
+					background-image: linear-gradient(45deg, #040e18, #255);
+					font-family: "Roboto", sans-serif;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+				}
+			</style>
+		</head>
+
+		<!-- HTML Page design foram -->
+
+		<body>
+			<div class="login-page">
+				<div class="form">
+					<div class="login">
+						<div class="login-header">
+							<h3>LOGIN</h3>
+							<p>Please enter your credentials to login.</p>
+						</div>
+					</div>
+					<form class="login-form">
+						<input type="text" placeholder="Username" />
+						<input type="text" placeholder="Mobile_number" />
+						<input type="Password" placeholder="Password" />
+						<button>Login</button>
+						<p class="message">Not registered? <a href="#">Create an account</a></p>
+
+						<body align="center">
+						</body>
+
+
+					</form>
+		</body>
+
+
+		</html>
